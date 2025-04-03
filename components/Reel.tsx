@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function Reel() {
   return (
-    <section id="reel" className="py-24 md:py-16 px-6 bg-white text-gray-dark">
+    <section id="reel" className="py-16 md:py-24 px-4 md:px-6 bg-white text-gray-dark">
       <div className="max-w-4xl mx-auto text-left">
         {/* セクションタイトル */}
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-normal">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 tracking-normal">
           <span className="text-accent-red mr-[0.1em]">R</span>eel
         </h2>
 
         {/* 動画 */}
-        <div className="w-full aspect-video rounded-md overflow-hidden mb-8">
+        <div className="w-full aspect-video rounded-md overflow-hidden mb-6 md:mb-8">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/_t600-CH8xA"
@@ -23,7 +23,7 @@ export default function Reel() {
 
         {/* Designへの誘導 */}
         <div className="text-base md:text-lg leading-relaxed">
-          <p className="mb-4">
+          <p className="mb-3 md:mb-4">
             その他の作品については、以下よりご覧いただけます。
           </p>
           <Link

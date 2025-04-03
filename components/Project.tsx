@@ -1,14 +1,14 @@
 export default function Project() {
     return (
-      <section id="project" className="py-24 md:py-16 px-6 bg-white text-gray-dark">
+      <section id="project" className="py-16 md:py-24 px-4 md:px-6 bg-white text-gray-dark">
         <div className="max-w-4xl mx-auto text-left">
           {/* セクションタイトル */}
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-normal">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 tracking-normal">
             <span className="text-accent-red mr-[0.1em]">P</span>roject
           </h2>
   
           {/* 説明文 */}
-          <p className="text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-base md:text-lg leading-relaxed mb-4 md:mb-6">
             ChatGPT API を活用し、気分に合ったコーヒーを提案する CLI ツールを Python で開発しました。
             ターミナルで動く軽量なボットで、ユーザーの気分をもとに自然言語でコーヒー豆を提案します。
             <br /><br />
