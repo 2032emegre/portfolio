@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Reel() {
   return (
-    <section id="reel" className="pt-16 pb-24 px-6 bg-white text-gray-dark">
-      <div className="max-w-4xl mx-auto px-6 text-left">
+    <section id="reel" className="py-24 md:py-16 px-6 bg-white text-gray-dark">
+      <div className="max-w-4xl mx-auto text-left">
         {/* タイトル */}
         <h2 className="text-2xl md:text-3xl font-bold mb-8">
           <span className="text-accent-red">R</span>eel
@@ -22,13 +22,13 @@ export default function Reel() {
         </div>
 
         {/* Designへの誘導 */}
-        <div className="text-sm md:text-base">
+        <div className="text-base">
           <p className="mb-4">
             その他の作品については、以下よりご覧いただけます。
           </p>
           <Link
-  href="/design"
-            className="mt-6 inline-block text-accent-red underline underline-offset-4 hover:opacity-80 transition"
+            href="/design"
+            className="text-accent-red hover:underline transition-all duration-300 inline-flex items-center"
           >
             その他のデザイン作品はこちら →
           </Link>
