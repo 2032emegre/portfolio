@@ -4,8 +4,8 @@ export default function Reel() {
   return (
     <section id="reel" className="py-24 md:py-16 px-6 bg-white text-gray-dark">
       <div className="max-w-4xl mx-auto text-left">
-        {/* タイトル */}
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">
+        {/* セクションタイトル */}
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-normal">
           <span className="text-accent-red">R</span>eel
         </h2>
 
@@ -22,7 +22,7 @@ export default function Reel() {
         </div>
 
         {/* Designへの誘導 */}
-        <div className="text-base">
+        <div className="text-base md:text-lg leading-relaxed">
           <p className="mb-4">
             その他の作品については、以下よりご覧いただけます。
           </p>
