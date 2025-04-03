@@ -6,7 +6,7 @@ export default function Reel() {
       <div className="max-w-4xl mx-auto text-left">
         {/* セクションタイトル */}
         <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-normal">
-          <span className="text-accent-red">R</span>eel
+          <span className="text-accent-red mr-[0.1em]">R</span>eel
         </h2>
 
         {/* 動画 */}

@@ -3,8 +3,8 @@ export default function Project() {
       <section id="project" className="py-24 md:py-16 px-6 bg-white text-gray-dark">
         <div className="max-w-4xl mx-auto text-left">
           {/* セクションタイトル */}
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">
-            <span className="text-accent-red">P</span>roject
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-normal">
+            <span className="text-accent-red mr-[0.1em]">P</span>roject
           </h2>
   
           {/* 説明文 */}
