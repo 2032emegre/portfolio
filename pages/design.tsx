@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -154,12 +155,14 @@ const work = {
 
                     <div className="flex gap-6 overflow-x-auto pb-2">
                       {work.screenshots.map((img, i) => (
-                        <img
-                          key={i}
-                          src={`/cutshot/${img}`}
-                          alt={`${work.title} screenshot ${i + 1}`}
-                          className="w-48 rounded-md"
-                        />
+                        <div key={i} className="relative w-48 h-32">
+                          <Image
+                            src={`/cutshot/${img}`}
+                            alt={`${work.title} screenshot ${i + 1}`}
+                            fill
+                            className="object-cover rounded-md"
+                          />
+                        </div>
                       ))}
                     </div>
 
@@ -193,11 +196,14 @@ const work = {
     >
       {["moc01.jpg", "moc02.jpg", "moc03.jpg", "moc04.jpg", "moc05.jpg", "moc06.jpg", "moc07.jpg", "moc08.jpg"].map((img, i) => (
         <SwiperSlide key={i}>
-          <img
-            src={`/self/${img}`}
-            alt={`Self Branding ${i + 1}`}
-            className="w-full h-auto object-cover"
-          />
+          <div className="relative aspect-[4/3]">
+            <Image
+              src={`/self/${img}`}
+              alt={`Self Branding ${i + 1}`}
+              fill
+              className="object-cover"
+            />
+          </div>
         </SwiperSlide>
       ))}
       <div className="swiper-button-prev !text-accent-red !w-10 !h-10 !left-2 z-10 after:!text-2xl"></div>
